@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+<title>Patient Registration</title>
+</head>
+
+<body>
+
+     
+
+<form class="main-container" method="POST" action="home.html">
+
+    <h1> Patient Registration </h1>
+
+    <div class="field-container">
+    <label class="input-field" for="firstName">First Name: </label>
+    <input class="input-box" type="text" name="firstName" id="firstName" required>
+
+    <label class="input-field" for="lastName">Last Name: </label>
+    <input class="input-box" type="text" name="lastName" id="lastName" required>
+
+    <label class="input-field" for="email">Email Address: </label>
+    <input class="input-box" type="email" name="email" id="email" required>
+
+    <label class="input-field" for="phone">Phone Number: </label>
+    <input class="input-box" type="tel" name="phone" id="phone" value="+63" >
+
+    <label class="input-field" for="DateOfBirth">Date Of Birth: </label>
+    <input class="input-box" type="date" name="DateOfBirth" id="DateOfBirth"  required>
+
+    <label class="input-field" for="gender"><strong> Gender </strong></label>
+    <div class="gender-radio">
+    <input type="radio" id="gender" name="gender" required>
+    <label for="gender"> Male </label>
+    <input type="radio" id="gender" name="gender" required>
+    <label for="gender"> Female </label>
+    <input type="radio" id="gender" name="gender" required>
+    <label for="gender"> Other </label>
+    </div>
+
+    <label class="input-field" for="department"> Department: </label>
+    <select class="input-box" name="department" id="department">
+        <option class="input-box" value="Dentist"> Dentist </option>
+        <option class="input-box" value="Optometrist"> Optometrist </option>
+        <option class="input-box" value="General Checkup"> General Checkup </option> 
+    </select>
+
+    <label class="input-field"for="symptoms"> Symptoms: </label>
+    <textarea class="input-box" name="symptoms" id="symptoms" row="3" cols="50"></textarea>
+
+    <div class="input-btn">
+        <div class="btn-box">
+            <button class="blue" type="btn-submit"> Submit </button>
+            <button class="grey" type="btn-reset"> Reset</button>
+        </div>
+    </div>
+</div>
+</form>
+</body>
+</html>

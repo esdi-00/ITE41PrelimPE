@@ -1,0 +1,82 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    max-width: 100%;
+
+}
+.h1 {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.field-container{
+background-color: aliceblue;
+max-width: 100%;
+padding: 15px;
+border-radius: 25px ;
+border-style: groove;
+border-color: black;
+box-shadow: rgba(0 , 0, 0, 1)
+
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+     
+}
+.input-btn{
+    display: flex;
+    flex-direction: row;
+    
+}
+.input-box{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-self: center;
+    margin: 0;
+
+}
+.input-box:hover{
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);   
+}
+.gender-radio{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+
+}
+.blue {
+    background-color: rgb(110, 185, 185);
+}
+.grey {
+    background-color: rgba(112, 104, 104, 0.514);
+}
+.btn-box{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    padding: 15px;
+}
+@media only screen and (min-width: 768px) {
+.main-container {
+    display: block;
+    flex: 1;
+    width: 100%;
+}
+.h1{
+    flex: 1;
+}
+.field-container, .input-field{
+    flex: 1;
+}
+
+}
