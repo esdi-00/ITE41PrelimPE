@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="main-container"action="home.html" method="post">
+        <div class="form-container">
+              <h1>Clinic Patient Registration</h1>
+            <div class="form-group">
+                <label for="Name"><strong>First Name:</strong></label>
+                <input type="text" name="firstname" id="firstname" required placeholder="Enter your First Name">
+            </div>
+
+            <div class = "form-group">
+                <label for="Name"><strong>Last Name:</strong></label>
+                <input type="text" name="lastname" id="lastname" placeholder="Enter your Last Name:">
+            </div>
+
+            <div class="form-group">
+                <label for="email"><strong>Email Address: </strong></label>
+                <input type="email" name="Email" id="email" required placeholder="Enter your Email:">
+            </div>
+
+            <div class="form-group">
+                <label for="PhoneNum"><strong>Phone Number: </strong></label>
+                <input type="tel" name="PhoneNum" id="PhoneNum" required placeholder="Enter your Phone Number">
+            </div>
+            <div class="form-group">
+                <label for="DOB"><strong>Date of Birth: </strong></label>
+                <input type="date" name="DOB" id="DOB" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Gender"><strong>Gender</strong></label>
+
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="Gender" id="Male" required>
+                        Male
+                    </label>
+                    <label>
+                        <input type="radio" name="Gender" id="Female" required>
+                        Female
+                    </label>
+                    <label>
+                        <input type="radio" name="Gender" id="Other" required>
+                        Other
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Dept"><strong>Department: </strong></label>
+                <select name="Dept" id="Dept">
+                    <option value="1">Dentist</option>
+                    <option value="2">Optometrist</option>
+                    <option value="3">General CheckUp</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="BrfSymptoms"><strong>Brief Symptoms: </strong></label>
+                <textarea name="BrfSymptoms" id="BrfSymptoms" rows="5" placeholder="Enter your Symptoms"></textarea>
+            </div>
+
+            <div class="button">
+                <button class="btn">Submit</button>
+                <button class="rst-btn">Reset</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
