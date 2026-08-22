@@ -1,0 +1,77 @@
+
+.body{
+    background-color:#808080;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    width: 500;
+    height: 500;
+    border: solid 2.5px;
+    border-radius: 20px;
+    background-color: rgb(177, 44, 44);
+    font-size: 20px;
+    box-shadow: 1px 5px black;
+    
+}
+.Fname{
+    input:focus {
+  background-color: rgb(233, 131, 131);
+  border: 3px solid #2b2a2a;
+  outline: none;
+}
+}
+.Lname{
+    input:focus {
+  background-color: rgb(233, 131, 131);
+  border: 3px solid #2b2a2a;
+  outline: none;
+}
+}
+.Email{
+    input:focus {
+  background-color: rgb(233, 131, 131);
+  border: 3px solid #2b2a2a;
+  outline: none;
+}
+}
+.Number{
+    input:focus {
+  background-color: rgb(233, 131, 131);
+  border: 3px solid #2b2a2a;
+  outline: none;
+}
+}
+.Date{
+    input:focus {
+  background-color: rgb(233, 131, 131);
+  border: 3px solid #2b2a2a;
+  outline: none;
+}
+}
+
+.Textarea{
+    input:focus {
+  background-color: rgb(233, 131, 131);
+  border: 3px solid #2b2a2a;
+  outline: none;
+}
+}
+
+.Button{
+    input:focus {
+    background-color: #2b2a2a(128, 0, 0)ow;
+}
+}
+
+@media screen {
+}

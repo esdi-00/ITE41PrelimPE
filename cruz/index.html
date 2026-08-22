@@ -1,0 +1,86 @@
+<DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Patient Registration</title>
+        <link rel="stylesheet" href="registration.css">
+    </head>
+    <body class="body">
+        
+        <form action="#" method="post">
+
+            <h1 align=center><Strong>Clinic Patient Registration</Strong></h1>
+
+            <div class="container">
+
+            <div class="Fname">
+                <label for="first name">First name: </label> 
+                <input type="text" required>
+            </div>
+
+            <div class="Lname">
+                <label for="last name">Last name: </label>
+                <input type="text" required>
+            </div>
+
+            <div class="Email">
+                <label for="Email Address">Email Address: </label>
+                <input type="email" required>
+            </div>
+
+            <div class="Number">
+                <label for="number">Number: </label> 
+                <input type="number">
+            </div>
+
+            <div class="Date">
+                <label for="Date">Date of Birth: </label>
+                <input type="Date" required>
+            </div>
+
+            
+            <div class="Gender">
+                <label for="Gender">Gender: </label><br>
+
+                <input type="radio" id="Male" name="Gender" value="Male">
+                <label for="Male">Male</label> <br>
+
+                <input type="radio" id="Female" name="Gender" value="Female">
+                <label for="Female">Female</label> <br>
+
+                <input type="radio" id="Other" name="Gender" value="Others">
+                <label for="Others">Others</label>
+
+            </div>
+
+            <div class="Dropdown">
+                <label for="Department">Department:</label>
+
+                <select name="Department" id="Department">
+
+                    <option value="Options">---Options---</option>
+
+                    <option value="Dentist">Dentist</option>
+
+                    <option value="Optometrist">Optometrist</option>
+
+                    <option value="Gernaral Checkup">General Checkup</option>
+
+                </select>
+            </div>
+
+            <div class="Textarea">
+                <label for="Brief Symptoms">Brief Symptoms:</label><br>
+                <textarea id="brief symptoms" name="brief symptoms" rows="4" cols="50"></textarea>
+            </div>
+
+            <div class="Button">
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+            </div>
+        </div>
+        </form> 
+
+    </body>
+    </html>
