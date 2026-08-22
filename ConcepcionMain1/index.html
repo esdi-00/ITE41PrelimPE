@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+
+
+<body>
+
+
+    <div class="main-container">
+    <!-- heading -->
+    <div class="Heading" >
+        <h1>Clinic Patient Registration</h1>
+    </div>
+
+    <div class="input-container">
+    <!-- forms(user input) -->
+        <form action="thankyou.html" method="post" >
+        <!-- first name -->
+        <div class="firstname">
+            <label for="fname" ><b>First name:</b></label><br>
+            <input type="text" id="fname" name="fname" required><br>
+        </div>       
+        <!-- last name -->
+        <div class="lastname">
+            <label for="lname"><b>Last name:</b></label><br>
+            <input type="text" id="lname" name="lname" required><br>
+        </div>
+        <!-- Email address -->
+        <div class="gmail">
+            <label for="gmail"><b>Email Address:</b></label><br>
+            <input type="email" id="gmail" gmail="gmail" required><br>
+        </div>
+        <!-- Phone number -->
+        <div class="phonenumber"> 
+            <label for="Phone number"><b>Phone number</b></label><br>
+            <input type="text" id="Phone number" Phone number="Phone number"><br><br>
+        </div>
+        <!-- Date of Birth -->
+        <div class="dateofbirth">
+            <label for="Date"><b>Date of Birth</b></label>
+            <input type="date" required> 
+        </div>
+
+        <!-- Gender -->
+        <div class="gender">
+            <p><b>Gender: </b></p>
+
+            <input type="radio" id="Male" name="Gender" value="Male">
+            <label for="Male" required>Male</label><br>
+            <input type="radio" id="css" name="Gender" value="Female">
+            <label for="Female" required>Female</label><br>
+            <input type="radio" id="Other" name="Gender" value="Other">
+            <label for="Other" required>Other</label>
+
+            <br><br>
+        </div>
+
+        <!-- Department -->
+        <div>
+            <label for="Department" required><b>Department:</b></label>
+                <select name="Department" id="Department"><br>
+                    <option value="Dentist">Dentist</option>
+                    <option value="Optometrist">Optometrist</option>
+                    <option value="General Checkup">General Checkup</option>
+                </select>
+            <br><br>
+        </div>
+        <!-- Brief Symptoms -->
+        <div>
+            <p><label for="Brief Symptoms"><b>Brief Symptoms:</b></label></p>
+            <textarea id="Brief Symptoms" name="Brief Symptoms" rows="3" cols="50" required>
+
+            </textarea><br>
+        </div>
+        
+        <!-- submit button/reset button -->    
+
+            <div class="submitbtn">
+            <input type="submit" value="Submit"><br>
+            </div>
+
+            <div class="resetbtn">
+            <input type="reset"  value="Reset">
+            </div>
+       
+
+    
+        </form>
+    </div>
+    </div>
+
+
+</body>
+</html>
