@@ -1,19 +1,43 @@
-.main-container  {
+* {
+    align-items: center;
+
+}
+
+body {
+    background-image: url(https://img.magnific.com/premium-vector/clean-medical-background-vector_53876-166663.jpg?semt=ais_hybrid&w=740&q=80);
+}
+
+.main-container {
     width: 500px;
     margin: 10px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #6ca89e;
+    border-color: #020303;
+    background-color: #c8ebfc;
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
     justify-content: space-between;
+    font-style: bold;
+    box-shadow: #01cffd;
+    font-family: "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #2D3748;
 }
 
 h1 {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    font-family: "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #01cffd;
 }
 
 .form-group {
@@ -22,24 +46,128 @@ h1 {
     flex-wrap: wrap;
     margin: 10px auto;
     padding: 5px;
-    background-color: rgb(137, 194, 194);
-    align-content: center;
+    border-radius: 3px;
+    background-color: #D7EEF3;
+    border: 1px solid;
+    border-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
 }
 
-.form-control {
-    
+input:focus {
+    background-color: #c8ebfc;
+}
+
+#date {
+    flex: 1;
+}
+
+#department {
+    flex: 1;
+}
+
+.form-control1 {
+
     width: 100%;
     flex: 1;
+    border: 1px solid;
+    border-radius: 3px;
 
 }
 
-.button {
+.form-control2 {
+
     width: 100%;
-    align-content: center;
-    background-color: rgb(137, 194, 194);
+    flex: 1;
+    border: 1px solid;
+    border-radius: 3px;
+
+}
+
+.form-control3 {
+
+    width: 100%;
+    flex: 1;
+    border: 1px solid;
+    border-radius: 3px;
+
+}
+
+.form-control4 {
+
+    width: 100%;
+    flex: 1;
+    border: 1px solid;
+    border-radius: 3px;
+
+}
+
+.form-radio {
+    width: 500px;
     display: flex;
     flex-wrap: wrap;
     margin: 10px auto;
     padding: 5px;
+    background-color: #D7EEF3;
+    align-content: center;
+    border: 1px solid;
+    border-color: black;
+    justify-content: center;
+    border-radius: 3px;
 }
 
+
+.button button {
+    padding: 10px 25px;
+    cursor: pointer;
+    color: #0e1111;
+    border-radius: 5px;
+    border-color: #000000;
+    justify-content: space-between;
+}
+
+.form-symptoms {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    padding: 5px;
+    border: 1px solid #020303;
+    font-weight: bold;
+    background-color: #D7EEF3;
+    align-content: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+
+
+@media (max-width: 1024px) {
+    body {
+        width: 95%;
+        padding: 5px;
+    }
+
+    .main-container {
+        width: 90%;
+        padding: 12px;
+    }
+
+    .form-control,
+    .form-group,
+    .form-radio,
+    .form-symptoms {
+        width: 90%;
+        padding: 5px;
+    }
+
+    .form-control {
+        width: 90%;
+        font-size: 12px;
+    }
+
+    .buttons button {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+}

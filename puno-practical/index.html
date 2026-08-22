@@ -14,25 +14,30 @@
     <form class="main-container" type="POST" action="home.html">
         <div class="form-group">
             <label for="first-name">FirstName: </label>
-            <input class="form-control" type="form-text" id="first-name" name="first-name" required>
+            <input class="form-control1" type="form-text" id="first-name" name="first-name" placeholder="Enter your First Name" required>
         </div>
 
         <div class="form-group">
             <label for="last-name">LastName: </label>
-            <input class="form-control" type="text" id="last-name" name="last-name" required>
+            <input class="form-control2" type="text" id="last-name" name="last-name" placeholder="Enter your Last Name" required>
         </div>
 
         <div class="form-group">
             <label for="email">Email Adress: </label>
-            <input class="form-control" type="email" id="email" name="email" required>
+            <input class="form-control3" type="email" id="email" name="email" placeholder="Enter your Email Adress" required>
         </div >
 
         <div class="form-group">
             <label for="number">Phone Number: </label>
-            <input class="form-control" type="number" id="number" name="number" value="+63" required>
+            <input class="form-control4" type="tel" id="number" name="number" value="+63" required>
         </div>
 
-        <div class="form-group">
+        <div class="form-group"> 
+            <label for="date">Date of Birth: </label>
+            <input type="date" id="date" name="date" required>
+        </div>
+
+        <div class="form-radio">
             <input type="radio" name="gender" id="Male" value="Male">
             <label>Male</label>
             <input type="radio" name="gender" id="Female" value="Male">
@@ -50,9 +55,9 @@
             </select>
         </div>
 
-        <div class="form-group"> 
+        <div class="form-symptoms"> 
             <label>Brief Symptoms:</label>
-            <textarea name="Brief Symptoms" id="message" rows="3" cols="50"></textarea>
+            <textarea name="Brief Symptoms" id="message" rows="3" cols="50" placeholder="Describe your symptoms"></textarea>
         </div>
 
         <div class="button"> 
