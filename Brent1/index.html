@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="main-container" type="GET" action="home.html">
+
+        <h1><strong> Health Form </strong></h1>
+
+        <div class="form-group">
+            <label for="username"><strong>First Name:</strong></label>
+            <input class="form-control" type="text" name="username" id="username" required="true">
+        </div>
+
+        <div class="form-group">
+            <label for="username"><strong>Last Name:</strong></label>
+            <input class="form-control" type="text" name="username" id="username" required="true">
+        </div>
+
+        <div class="form-group">
+            <label for="email"><strong>Email Address</strong></label>
+            <input class="form-control" type="email" name="email" id="email" required="true">
+        </div>
+
+        <div class="form-group"> 
+            <label for="number"><strong>Contact Number</strong></label>
+            <input class="form-control" type="tel" name="number" id="number" value="+63" required>
+        </div>
+
+        <div class="form-appointment">
+            <label for="date"><strong>Date of Birth</strong></label>
+            <input class="form-control" type="date" name="date" id="date" required="true">
+        </div>
+
+        <div class="form-appointment-time">
+            <input type="radio" name="gender" id="Male" value="Male" required>
+            <label for="Male">Male</label>
+            <input type="radio" name="gender" id="Female" value="Female" required>
+            <label for="Female">Female</label>
+            <input type="radio" name="gender" id="Other" value="Other" required>
+            <label for="Other">Other</label>
+        </div>
+
+        <div class="form-Department">
+            <label for="Department"><strong>Department</strong> </label>
+            <select name="Department" id="Department" required="true">
+                 <optgroup label="Options"></optgroup>
+                <option value="Dentist">Dentist</option>
+                <option value="Optometrist">Optometrist</option>
+                <option value="General Checkup">General Checkup</option>
+            </select>
+        </div>
+
+        <div class="form-additional-symptoms">
+            <label for="message"><strong>Brief Symptoms</strong></label>   
+            <textarea name="message" id="message" cols="50" rows="3" style="width: 388px; height: 118px;"required></textarea>
+        </div>
+
+        <div class="buttons">
+            <button type="submit" class="submit-btn"><strong>Submit</strong></button>
+            <button type="reset" class="clear-btn"><strong>Cancel</strong></button>
+        </div>
+
+
+    </form>
+
+</body>
+
+</html>

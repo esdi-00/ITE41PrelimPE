@@ -1,0 +1,83 @@
+.main-container {
+    width: auto;
+    height: auto;
+    margin: 100px auto;
+    padding: 20px, 5px;
+    border: 10px solid #d43131;
+    background-color: rgb(78, 163, 163);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    align-items: center;
+    justify-content:space-between;
+}
+    .form-group {
+    border: 1px solid #2292be;
+    justify-content: center;
+    align-content: center;
+    width: 450px;
+    display: flex;   
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    box-shadow:#233275;
+}
+.form-appointment {
+    justify-content: center;
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #2b85ce;
+    font-weight: bold;
+    align-items: center;
+     border: 1px solid #2292be;
+}
+
+.form-appointment-time {
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    color: #040505;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+     border: 1px solid #2292be;
+}
+
+.form-Department {
+    border: 1px solid #2292be;
+    padding: 10px;
+    
+}
+
+.buttons {
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: rgb(4, 49, 248);
+    font-weight: bold;
+    background-color: rgba(30, 75, 105, 0.1);
+    justify-content: center;
+}
+
+.buttons button:hover {
+   background-color: rgb(22, 97, 32);
+}
+
+.submit-btn {
+    background-color: rgb(66, 134, 80);
+}
+
+.clear-btn {
+    background-color: rgb(247, 40, 4);
+}
+
