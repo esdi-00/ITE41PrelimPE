@@ -33,7 +33,7 @@ box-shadow: rgba(0 , 0, 0, 1)
 }
 .input-btn{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     
 }
 .input-box{
@@ -60,11 +60,15 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
     background-color: rgba(112, 104, 104, 0.514);
 }
 .btn-box{
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    text-align: center;
+    
+    justify-content: center;
+    
     padding: 15px;
+}
+.p {
+    justify-self: center;
+    align-self: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 @media only screen and (min-width: 768px) {
 .main-container {
