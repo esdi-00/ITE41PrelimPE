@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration</title>
+    <h1> Clinic Patient Registration </h1>
+    <link rel="stylesheet" href="style\style.css" >
+</head>
+
+<body>
+
+    <form class="main-container" type="POST" action="home.html">
+        <div class="form-group">
+            <label for="first-name">FirstName: </label>
+            <input class="form-control" type="form-text" id="first-name" name="first-name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="last-name">LastName: </label>
+            <input class="form-control" type="text" id="last-name" name="last-name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Adress: </label>
+            <input class="form-control" type="email" id="email" name="email" required>
+        </div >
+
+        <div class="form-group">
+            <label for="number">Phone Number: </label>
+            <input class="form-control" type="number" id="number" name="number" value="+63" required>
+        </div>
+
+        <div class="form-group">
+            <input type="radio" name="gender" id="Male" value="Male">
+            <label>Male</label>
+            <input type="radio" name="gender" id="Female" value="Male">
+            <label>Female</label>
+            <input type="radio" name="gender" id="Other" value="Male">
+            <label>Other</label>
+        </div>
+
+        <div class="form-group">
+            <label for="department">Department: </label>
+            <select id="department" name="deparment">
+                <option value="Dentist">Dentist</option>
+                <option value="Optometrist">Optometrist</option>
+                <option value="General Checkup">General Checkup</option>
+            </select>
+        </div>
+
+        <div class="form-group"> 
+            <label>Brief Symptoms:</label>
+            <textarea name="Brief Symptoms" id="message" rows="3" cols="50"></textarea>
+        </div>
+
+        <div class="button"> 
+            <button class="submit-btn" name="submit" id="submit" type="submit">Submit</button>
+            <button class="reset-btn" name="reset" id="reset" type="reset">Reset</button>
+        </div>
+
+
+
+    </form>
+
+</body>
+
+</html>
