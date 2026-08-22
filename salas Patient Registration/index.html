@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scle=1.0">
+        <title>Patient Registration</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="header-title">
+                <h1> Clinic Patient Registration </h1>
+            </div>
+        </div>
+        
+        <form class="main-container" action="home.html" method="get">
+            <div class="info-fields">
+                <div class="info-box">
+                    <fieldset>
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" autofocus required>
+                        
+                <div>
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                    
+                    
+                </div>
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="number">Phone Number</label>
+                    <input type="tel" id="number" name="number">
+                </div>
+                <div>
+                    <label for="date-of-birth">Date of Birth</label>
+                    <input type="date" id="date-of-birth" name="date-of-birth" required>
+                </div>
+
+                <p>Please select your gender:</p>
+                <div>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label><br>
+                    
+                </div>
+                 <div>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label><br>
+                    
+                </div>
+                <div>
+                    <input type="radio" id="other" name="gender">
+                    <label for="other">other</label><br>
+                    
+                </div>
+                <br>
+                
+                <p>Please select your department:</p>
+                <div>
+                    <label for="department">Department</label>
+                    <select name="department" id="department">
+                    <option value="dentist">Dentist</option>
+                    <option value="optometrist">Optometrist</option>
+                    <option value="general-checkup">General Checkup</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message">Brief Symptoms</label><br>
+                    <textarea name="message" id="message" cols="50" rows="3" style="width: 388px; height: 118px;"></textarea>
+                </div>
+                </fieldset>    
+            </div>
+
+
+        <div class="buttons">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">    
+        </div>
+        </form>
+        
+    </body>
+
+</html>
