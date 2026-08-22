@@ -1,0 +1,124 @@
+body {
+    background-color: #d9eafa;
+}
+
+.main-container{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 60%;
+    margin: 10px auto;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 50px 30px 40px 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 10px 15px #4e5458;
+}    
+
+h1{
+    text-align: center;
+}
+
+.form-group{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    margin-bottom: 10px;
+    
+}
+
+.form-group label{
+    font-size: 20px;
+    margin-right: 12px;
+
+}
+
+.form-input{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    flex: 1;
+}
+
+.form-input:focus{
+    background-color: aliceblue;
+}
+
+.form-gender {
+    width: 40%;
+    display: flex;
+    margin: 10px;
+    justify-content: space-around;
+    font-size: 20px;
+
+}
+.form-selection select{
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid grey;
+
+
+}
+
+.form-selection label{
+    font-size: 20px;
+    margin-right: 12px;
+}
+.form-symptoms{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: 10px;
+}
+
+.form-symptoms label{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    margin-right: 12px;
+}
+
+.form-symptoms textarea{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    flex: 1;
+}
+
+.form-button button{
+    padding: 10px 25px;
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: rgb(72, 112, 187);
+    border-radius: 5px;
+    border: none;
+}
+
+
+@media (max-width: 600px) {
+    .main-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .form-group,
+    .form-gender,
+    .form-selection select,
+    .form-symptoms {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .form-button {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+}
