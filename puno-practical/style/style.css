@@ -140,6 +140,20 @@ input:focus {
     border-radius: 3px;
 }
 
+.home-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: center;
+    border-radius: 5px;
+    border-color: #020303;
+    background-color: #c8ebfc;
+    margin-top: 200px;
+}
+
+
+
 
 
 @media (max-width: 1024px) {
@@ -148,7 +162,7 @@ input:focus {
         padding: 5px;
     }
 
-    .main-container {
+    .main-container,.home-body {
         width: 90%;
         padding: 12px;
     }
