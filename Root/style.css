@@ -1,0 +1,114 @@
+.main-container {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr 2fr ;
+}
+.form-container {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 60px 20px 60px 20px;
+    align-items:center;
+    border: 10px solid #dcedc2;
+    border-radius: 20px;
+}
+.input-fields {
+    display: grid;
+    flex-wrap: nowrap;  
+    gap: 10; 
+    margin: 20px;
+    align-content:center;
+    justify-items:center;
+    border-radius: 20px;
+    width:100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.form-header {
+    display: grid;
+    justify-items: center;
+}
+
+h1{
+    size: 34px;
+    font-style: italic;
+    color: #ff8c94;
+}
+.input-group1 {
+    display: grid;
+    flex-wrap: nowrap;  
+    gap: 10; 
+    margin: 20px;
+    align-content:center;
+    justify-items:center;
+}
+.radio-field{
+    display: flex;
+    flex-wrap: nowrap;  
+    gap:5; 
+    margin:5px;
+    align-content:center;
+    justify-items:center;
+}
+.label-class{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+
+}
+.label-class1{
+    margin: 20px;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form-select{
+    flex-direction:1 1 10%;
+    font-weight:bolder;
+    color: rgb(0, 8, 8);
+    background-color: white;
+    border-radius: 20px;
+}
+
+.radio-field {
+    display:flex;
+    align-content:center;
+    justify-items:center;
+    margin-bottom: 30px;
+    padding: 10px 10px 0px 10px;
+}
+
+.are-fields{
+    font-size: 24px;
+    background-color: transparent;
+}
+
+.btn-class {
+    display: flex;
+    grid-template-columns: 2fr 2fr ;
+    gap:15px;
+    padding:10px 10px 10px 10px;
+    margin: auto;
+    
+}
+.btn-type{
+    color:blue;
+    font-style: oblique;
+    background-color: #FFAAA6;
+    border-radius: 20px;
+    font-size: 12px;
+
+}
+.btn-types{
+    color:red;
+    font-style: oblique;
+    background-color:#FFAAA6;
+    border-radius: 20px;
+    font-size: 12px;
+
+}
+
+button:hover {
+  background-color: darkcyan;
+  transform: scale(1);
+  gap: 30px;
+  transition: 1s;
+  
+}
