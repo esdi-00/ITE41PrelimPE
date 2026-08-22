@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Patient Registration</title>
+</head>
+<body>
+    <form class="main-container" action="home.html" method="post">
+
+        <div class="form-title">
+            <h1>Clinic Patient Registration</h1>
+        </div>
+
+        <div class="form-container">
+
+            <div class="input-fields">
+                <label class="input-label" for="f_name">First Name:</label>
+                <input  class="input-field-text" type="text" id="f_name" name="f_name" required>
+            </div>
+
+            <div class="input-fields">
+                <label class="input-label" for="l_name">Last Name:</label>
+                <input  class="input-field-text" type="text" id="l_name" name="l_name" required>
+            </div>
+
+            <div class="input-fields">
+                <label class="input-label" for="mail">Email:</label>
+                <input  class="input-field-text" type="email" id="mail" name="mail" required>
+            </div>
+
+            <div class="input-fields">
+                <label class="input-label" for="num">Phone Number:</label>
+                <input  class="input-field-text" type="tel" id="num" name="num">
+            </div>
+
+            <div class="input-fields">
+                <label class="input-label" for="bdate">Date of Birth:</label>
+                <input  class="input-field-date" type="date" id="bdate" name="bdate">
+            </div>
+
+            <div class="input-fields">
+                <label class="input-label" for="gender">Gender:</label>
+
+                <input class="input-field-radio" type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input class="input-field-radio" type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <input class="input-field-radio" type="radio" id="other" name="gender" value="other" required>
+                <label for="other">Other</label>
+            </div>
+
+            <div class="input-fields">
+                 <label class="input-label" for="dept">Department:</label>
+
+                    <select class="dropbox" name="dept" id="dept">
+                        <option selected disabled>--Select Department--</option>
+                        <option value="dentist">Dentist</option>
+                        <option value="opto">Optometrist</option>
+                        <option value="general">General Checkup</option>
+                    </select>
+            </div>
+
+            <div class="input-fields">
+                <label class="input-label" for="symptoms">Brief Symptoms:</label>
+                <textarea name="symptoms" id="symptoms" cols="50" rows="3"></textarea>
+            </div>
+
+
+            <div class="btn-group">
+                <input class="btn submit-btn" type="submit" id="btn" name="btn" value="SUMBIT">
+                <input class="btn cancel-btn" type="reset" id="btn" name="btn" value="CANCEL">
+            </div>
+
+
+        </div>
+
+    </form>
+    
+</body>
+</html>
