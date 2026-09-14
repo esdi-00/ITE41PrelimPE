@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Patient Management System</title>
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <script src="../scripts/dashboard.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Clinic Patient Management System</div>
+        <div class="user-info">
+            <span>Welcome, <strong id="usernameDisplay">Admin</strong></span>
+            <button id="logoutBtn" class="btn-logout">Logout</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Patients</h3>
+                <p id="totalPatients">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Pending</h3>
+                <p id="pendingPatients">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Admitted</h3>
+                <p id="admittedPatients">0</p>
+            </div>
+        </section>
+
+        <section class="catalog-section">
+            <div class="section-header">
+                <h2>Patient Catalog</h2>
+                <input type="text" id="searchInput" placeholder="Search patient by name or email...">
+            </div>
+            <table class="patient-table">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email Address</th>
+                        <th>Department</th>
+                        <th>Brief Symptoms</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="patientTableBody">
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
